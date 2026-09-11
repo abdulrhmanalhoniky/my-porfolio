@@ -1,0 +1,71 @@
+
+body {
+    background-color: #1a1a2e
+}
+.main-header h1{
+    text-align: center;
+    font-family: 'Courier New', monospace; 
+    background: linear-gradient(45deg, #6ba9d0, #0e1982);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+}
+.main-header p{
+    text-align: center;
+    font-family: 'Courier New', monospace; 
+    background: linear-gradient(45deg, #6ba9d0, #0e1982);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+.nav-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.menu-card {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 15px 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.menu-card:hover {
+    background-color: #524458;
+    transform: translateY(-2px);
+}
+
+.menu-card h2 {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* شاشة العرض */
+.display-screen {
+    background-color: #282F44;
+    border-radius: 8px;
+    padding: 25px;
+    color: #FFFFFF;
+    min-height: 200px;
+    border: 1px solid #453A49;
+}
+
+.content-section {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
